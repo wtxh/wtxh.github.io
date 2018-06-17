@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="VB," />
+  <meta name="keywords" content="VB,Redim," />
 
 
 
@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
-<meta name="keywords" content="VB">
+<meta name="description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;">
+<meta name="keywords" content="VB,Redim">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VB动态数组Redim实测">
 <meta property="og:url" content="https://wtxh.github.io/2018/06/17/VB的动态数组/index.html">
 <meta property="og:site_name" content="VB爬坑指南">
-<meta property="og:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
+<meta property="og:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="e:/My_hexosite/blog/source/_posts/csdn.png">
 <meta property="og:image" content="e:/My_hexosite/blog/source/_posts/ms.png">
-<meta property="og:updated_time" content="2018-06-17T13:37:23.486Z">
+<meta property="og:updated_time" content="2018-06-17T14:14:16.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VB动态数组Redim实测">
-<meta name="twitter:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
+<meta name="twitter:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;">
 <meta name="twitter:image" content="e:/My_hexosite/blog/source/_posts/csdn.png">
 
 
@@ -245,8 +245,8 @@
   
 </nav>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.6.0/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.0.1/dist/Meting.min.js"></script>
  </div>
     </header>
 
@@ -313,6 +313,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/17/VB的动态数组/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/06/17/VB的动态数组/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -342,7 +352,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  645 字
                 </span>
               
 
@@ -358,7 +368,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  
+                  3 分钟
                 </span>
               
             </div>
@@ -379,7 +389,7 @@
       
 
       
-        <p>最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。<br><img src="E:\My_hexosite\blog\source\_posts\csdn.png" alt="csdn"><br>看上去很简单嘛写个demo测试一下</p>
+        <p>最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。<br><img src="E:\My_hexosite\blog\source\_posts\csdn.png" alt="csdn"><br>看上去很简单嘛写个demo测试一下</p>
 <pre><code>Sub test()
     Dim kh As Dictionary
     lr = Range(&quot;R9999&quot;).End(xlUp).Row
@@ -447,6 +457,8 @@ End Sub
           
             <a href="/tags/VB/" rel="tag"># VB</a>
           
+            <a href="/tags/Redim/" rel="tag"># Redim</a>
+          
         </div>
       
 
@@ -494,6 +506,13 @@ End Sub
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -551,7 +570,7 @@ End Sub
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -772,6 +791,43 @@ End Sub
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'wtxh',
+            repo: 'https://github.com/wtxh/comments',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '07829e17ee53a96b33dd9cf966629091a3e656dd',
+            
+                client_id: '5057e2008d0a913ef967'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
@@ -1224,6 +1280,6 @@ End Sub
 
   
 
-  undefined
+  
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":"tororo","bottom":-30,"mobileShow":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
