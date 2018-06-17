@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="测试," />
+  <meta name="keywords" content="VB," />
 
 
 
@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="一级标题无序列表 水果 香蕉 梨   蔬菜 黄瓜有序列表     水果 苹果   蔬菜   黑夜给了我黑色的眼睛 –顾城  这是斜体 这是粗体 百度  下一段    火箭 勇士     哈登 库里">
-<meta name="keywords" content="测试">
+<meta name="description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
+<meta name="keywords" content="VB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VB">
-<meta property="og:url" content="https://wtxh.github.io/2018/06/14/Hello-blog/index.html">
+<meta property="og:title" content="VB动态数组Redim实测">
+<meta property="og:url" content="https://wtxh.github.io/2018/06/17/VB的动态数组/index.html">
 <meta property="og:site_name" content="VB爬坑指南">
-<meta property="og:description" content="一级标题无序列表 水果 香蕉 梨   蔬菜 黄瓜有序列表     水果 苹果   蔬菜   黑夜给了我黑色的眼睛 –顾城  这是斜体 这是粗体 百度  下一段    火箭 勇士     哈登 库里">
+<meta property="og:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-16T00:39:15.013Z">
+<meta property="og:image" content="e:/My_hexosite/blog/source/_posts/csdn.png">
+<meta property="og:image" content="e:/My_hexosite/blog/source/_posts/ms.png">
+<meta property="og:updated_time" content="2018-06-17T13:37:23.486Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VB">
-<meta name="twitter:description" content="一级标题无序列表 水果 香蕉 梨   蔬菜 黄瓜有序列表     水果 苹果   蔬菜   黑夜给了我黑色的眼睛 –顾城  这是斜体 这是粗体 百度  下一段    火箭 勇士     哈登 库里">
+<meta name="twitter:title" content="VB动态数组Redim实测">
+<meta name="twitter:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject(&amp;quot;Sc">
+<meta name="twitter:image" content="e:/My_hexosite/blog/source/_posts/csdn.png">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://wtxh.github.io/2018/06/14/Hello-blog/"/>
+  <link rel="canonical" href="https://wtxh.github.io/2018/06/17/VB的动态数组/"/>
 
 
 
 
 
-  <title>VB | VB爬坑指南</title>
+  <title>VB动态数组Redim实测 | VB爬坑指南</title>
   
 
 
@@ -267,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wtxh.github.io/2018/06/14/Hello-blog/">
+    <link itemprop="mainEntityOfPage" href="https://wtxh.github.io/2018/06/17/VB的动态数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wtxh">
@@ -284,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VB</h1>
+          <h1 class="post-title" itemprop="name headline">VB动态数组Redim实测</h1>
         
 
         <div class="post-meta">
@@ -296,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T21:55:00+08:00">
-                2018-06-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-17T16:17:00+08:00">
+                2018-06-17
               </time>
             
 
@@ -314,7 +317,7 @@
 
           
           
-             <span id="/2018/06/14/Hello-blog/" class="leancloud_visitors" data-flag-title="VB">
+             <span id="/2018/06/17/VB的动态数组/" class="leancloud_visitors" data-flag-title="VB动态数组Redim实测">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -328,6 +331,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
           
 
           
@@ -345,46 +379,55 @@
       
 
       
-        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><ul>
-<li>水果<ul>
-<li>香蕉</li>
-<li>梨</li>
-</ul>
-</li>
-<li>蔬菜<ul>
-<li>黄瓜<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4></li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>水果<ol>
-<li>苹果</li>
-</ol>
-</li>
-<li>蔬菜</li>
-</ol>
-<blockquote>
-<p>黑夜给了我黑色的眼睛 –顾城</p>
-</blockquote>
-<p><em>这是斜体</em></p>
-<p><strong>这是粗体</strong></p>
-<p><a href="www.baidu.com">百度</a></p>
-<hr>
-<p>下一段</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">火箭</th>
-<th style="text-align:center">勇士</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">哈登</td>
-<td style="text-align:center">库里</td>
-</tr>
-</tbody>
-</table>
+        <p>最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀。<br><img src="E:\My_hexosite\blog\source\_posts\csdn.png" alt="csdn"><br>看上去很简单嘛写个demo测试一下</p>
+<pre><code>Sub test()
+    Dim kh As Dictionary
+    lr = Range(&quot;R9999&quot;).End(xlUp).Row
+    Set kh = CreateObject(&quot;Scripting.Dictionary&quot;)
+    For i = 2 To lr
+        mq = Range(&quot;R&quot; &amp; i).Value
+        sz = Range(&quot;U&quot; &amp; i).Value
+        If kh.Exists(mq) = False Then
+            kh(mq) = Array(sz)
+        Else
+            For j = 0 To UBound(kh(mq))
+                If kh(mq)(j) = sz Then
+                    flag = True
+                    Exit For
+                End If
+            Next j
+            If flag = False And sz &lt;&gt; &quot;&quot; Then
+                k = UBound(kh(mq))
+                Dim cup()
+                cup = kh(mq)                    
+                ReDim Preserve cup(k + 2)                    
+                cup(k + 2) = sz
+                kh(mq) = cup
+            End If
+            flag = False
+        End If
+    Next i
+    For Each Key In kh.Keys
+        Debug.Print Key, UBound(kh(Key)), Join(kh(Key), &quot;;&quot;)
+    Next
+End Sub
+</code></pre><p>我设置k是动态数组的上界，那么每次迭代之前的数组长度是k+1，因为数组都是从0开始编号的嘛。大神说重新声明时括号里要填上长度，那我迭代之后需要的长度比原来多1，就是k+2咯，没有任何毛病。打印出来看下结果：</p>
+<pre><code>4164/332    6          40;;41;;42;;43
+4186/332    2          39;;42
+5201/331-1  2        39;;41
+5203/331-1  4        37;;38;;39
+5203/331-2  0        36
+5358/331-1  8        37;;38;;39;;40;;41
+5358/331-2  2        35;;36
+</code></pre><p>第二列是每个动态数组最终的上界，第三列怎么这么多空值呢？规律是从第二个开始每隔一个数就会加一个空值，看来还是这个Redim重新设定数组长度的时候出错了，我把它改成k+1试试？打印一下：</p>
+<pre><code>4164/332    3          40;41;42;43
+4186/332    1          39;42
+5201/331-1  1        39;41
+5203/331-1  2        37;38;39
+5203/331-2  0        36
+5358/331-1  4        37;38;39;40;41
+5358/331-2  1        35;36
+</code></pre><p>Redim数组时括号中的数字表示的是重新定义后的上界数值，认为它是数组长度和Dim一样是想当然了。这位CSDN老哥还用两个例子试了一下证明自己是对的，你倒是把上界打印一下啊，你数组后面多了一个空值你知道不？最骚的是百度出来它还排在第一位，这老哥得误导多少人啊。震惊之余我在微软的官网搜索了一哈，哦原来人家写的明明白白，打扰了。（还提醒了你不要犯这样滴错误哟）<br><img src="E:\My_hexosite\blog\source\_posts\ms.png" alt="ms"><br>这个故事告诉我们学好英语是多么的重要。。。我开玩笑的，我其实是想说人生苦短，我用Python。</p>
 
       
     </div>
@@ -402,7 +445,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/测试/" rel="tag"># 测试</a>
+            <a href="/tags/VB/" rel="tag"># VB</a>
           
         </div>
       
@@ -411,6 +454,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/14/markdown practice/" rel="next" title="Markdown语法练习">
+                <i class="fa fa-chevron-left"></i> Markdown语法练习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
@@ -459,17 +518,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -488,7 +538,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -501,7 +551,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -540,22 +590,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">1.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
