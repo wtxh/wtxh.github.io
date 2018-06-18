@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="VB,Redim," />
+  <meta name="keywords" content="VB,Redim,动态数组," />
 
 
 
@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。数组长度是吧，看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject">
-<meta name="keywords" content="VB,Redim">
+<meta name="description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并欣赏了来自CSDN大神的带秀操作。（排名前几的搜索结果说的都一样）数组长度是吧，简单，写个demo测试一下。一个字典里每一项的值都是动态数组，每次修改需要用中间变量取出数组改完再放回去。（VB反人类证据+1） Sub test()     Dim kh As Dictionary     lr = R">
+<meta name="keywords" content="VB,Redim,动态数组">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VB动态数组Redim实测">
 <meta property="og:url" content="https://wtxh.github.io/2018/06/17/VB的动态数组/index.html">
 <meta property="og:site_name" content="VB爬坑指南">
-<meta property="og:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。数组长度是吧，看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject">
+<meta property="og:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并欣赏了来自CSDN大神的带秀操作。（排名前几的搜索结果说的都一样）数组长度是吧，简单，写个demo测试一下。一个字典里每一项的值都是动态数组，每次修改需要用中间变量取出数组改完再放回去。（VB反人类证据+1） Sub test()     Dim kh As Dictionary     lr = R">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://wtxh.github.io/img/csdn.png">
 <meta property="og:image" content="https://wtxh.github.io/img/ms.png">
-<meta property="og:updated_time" content="2018-06-17T15:28:14.276Z">
+<meta property="og:updated_time" content="2018-06-18T04:41:36.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VB动态数组Redim实测">
-<meta name="twitter:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。数组长度是吧，看上去很简单嘛写个demo测试一下 Sub test()     Dim kh As Dictionary     lr = Range(&amp;quot;R9999&amp;quot;).End(xlUp).Row     Set kh = CreateObject">
+<meta name="twitter:description" content="最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并欣赏了来自CSDN大神的带秀操作。（排名前几的搜索结果说的都一样）数组长度是吧，简单，写个demo测试一下。一个字典里每一项的值都是动态数组，每次修改需要用中间变量取出数组改完再放回去。（VB反人类证据+1） Sub test()     Dim kh As Dictionary     lr = R">
 <meta name="twitter:image" content="https://wtxh.github.io/img/csdn.png">
 
 
@@ -362,7 +362,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  651 字
+                  701 字
                 </span>
               
 
@@ -399,7 +399,7 @@
       
 
       
-        <p><div class="aplayer" data-id="1690727" data-server="netease" data-type="song" data-autoplay="true"></div><br>最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并学习了来自CSDN大神的带秀操作。<br><img src="\img\csdn.png" alt="csdn"><br>数组长度是吧，看上去很简单嘛写个demo测试一下</p>
+        <p><div class="aplayer" data-id="1690727" data-server="netease" data-type="song" data-autoplay="true"></div><br>最近碰到个问题一定要用VB来处理字典嵌套动态数组解决，于是我百度“VBA动态数组”点击第一个结果并欣赏了来自CSDN大神的带秀操作。（排名前几的搜索结果说的都一样）<br><img src="\img\csdn.png" alt="csdn"><br>数组长度是吧，简单，写个demo测试一下。一个字典里每一项的值都是动态数组，每次修改需要用中间变量取出数组改完再放回去。（VB反人类证据+1）</p>
 <pre><code>Sub test()
     Dim kh As Dictionary
     lr = Range(&quot;R9999&quot;).End(xlUp).Row
@@ -431,7 +431,7 @@
         Debug.Print Key, UBound(kh(Key)), Join(kh(Key), &quot;;&quot;)
     Next
 End Sub
-</code></pre><p>我设置k是动态数组的上界，那么每次迭代之前的数组长度是k+1，因为数组都是从0开始编号的嘛。大神说重新声明时括号里要填上长度，那我迭代之后需要的长度比原来多1，就是k+2咯，没有任何毛病。打印出来看下结果：</p>
+</code></pre><p>我设置k是动态数组的上界，那么每次迭代之前的数组长度是k+1（数组都是从0开始编号）。重新声明时括号里要填上长度，每次迭代之后需要的长度比原来多1，就是k+2，没毛病。打印出来看下结果：</p>
 <pre><code>4164/332    6         40;;41;;42;;43
 4186/332    2         39;;42
 5201/331-1  2        39;;41
@@ -439,7 +439,7 @@ End Sub
 5203/331-2  0        36
 5358/331-1  8        37;;38;;39;;40;;41
 5358/331-2  2        35;;36
-</code></pre><p>第二列是每个动态数组最终的上界，第三列怎么这么多空值呢？规律是从第二个开始每隔一个数就会加一个空值，看来还是这个Redim重新设定数组长度的时候出错了，我把它改成k+1试试？打印一下：</p>
+</code></pre><p>第二列是每个动态数组最终的上界，第三列怎么这么多空值呢？从第二个开始每隔一个数就有一个空值，看来还是这个Redim重新设定数组长度的时候出错了，我把它改成k+1试试？打印一下：</p>
 <pre><code>4164/332    3         40;41;42;43
 4186/332    1         39;42
 5201/331-1  1        39;41
@@ -447,7 +447,7 @@ End Sub
 5203/331-2  0        36
 5358/331-1  4        37;38;39;40;41
 5358/331-2  1        35;36
-</code></pre><p>Redim数组时括号中的数字表示的是重新定义后的上界数值，认为它是数组长度(和Dim一样)是想当然了。这位CSDN老哥还用两个例子试了一下证明自己是对的，你倒是把上界打印一下啊，你数组后面多了一个空值你知道不？最骚的是百度出来它还排在第一位，这老哥得误导多少人啊。震惊之余我在微软的官网搜索了一哈，哦原来人家写的明明白白，打扰了。（还提醒了你不要犯这样滴错误哟）<br><img src="\img\ms.png" alt="ms"><br>这个故事告诉我们学好英语是多么的重要。。。我开玩笑的，我其实是想说<em>人生苦短，我用Python。</em></p>
+</code></pre><p>给力！<br>结论：Redim数组时括号中的数字表示的是重新定义后的上界数值，而不是数组长度（那是Dim的用法）。这位CSDN带神还用两个例子试了一下证明自己是对的，你倒是把上界打印一下啊，你数组后面多了一个空值你知道不？最骚的是百度出来它还排在第一，剩下的几个答案也基本是抄袭他的，老哥你误导了多少人啊。震惊之余我在微软的官网搜索了一哈，哦原来人家写的明明白白，打扰了。（还贴心地提醒了大家不要犯这样滴错误）<br><img src="\img\ms.png" alt="ms"><br>这个故事告诉我们学好英语是多么的重要。。。我其实是想说<em>人生苦短，我用Python。</em></p>
 
       
     </div>
@@ -468,6 +468,8 @@ End Sub
             <a href="/tags/VB/" rel="tag"># VB</a>
           
             <a href="/tags/Redim/" rel="tag"># Redim</a>
+          
+            <a href="/tags/动态数组/" rel="tag"># 动态数组</a>
           
         </div>
       
@@ -580,7 +582,7 @@ End Sub
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
